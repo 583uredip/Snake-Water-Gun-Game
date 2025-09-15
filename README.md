@@ -33,5 +33,3 @@ This is similar to the popular **Rock, Paper, Scissors** game.
 3. Play and enjoy 🎉
 
 ---
-
-## 📌 Example
