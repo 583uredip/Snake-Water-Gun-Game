@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<script>
+do{
+    let u=prompt("Enter S for Snake, W for Wather,G for Gun");
+    let choice=["S", "W", "G"];
+    let comp=choice[Math.floor(Math.random()*3)];
+    let result=" ";
+    if(u===comp)
+    {
+        result="Draw";
+    }
+    else if((u==="S" && comp==="W")  || (u==="W" && comp==="G")  || (u==="G" && comp==="S"))
+    {
+    result="You Win";
+    }
+    else
+    {
+        result="You Lost";
+    }
+    alert(" Your Chose: "  +u  + " \nComputer Chose: "   +comp  +  " \nResult: "   + result );
+}
+while(confirm("Do You Want To Play Agin?"));
+</script>
+</body>
+</html>
